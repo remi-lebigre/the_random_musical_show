@@ -30,24 +30,26 @@ var a_artists = [
 
 
 var a_prefixes = 
-['la symphonie ',
-'la sarabande ',
-'le concerto ',
-'la chanson ',
-'une ode ',
-'le prélude ',
-'la fugue ',
-'la fantaisie ',
-'le lied ',
-'l opéra ',
-'le concert ',
-'la sonate ',
-'le ballet ',
-'la marche ',
-'l ouverture ',
-'la danse ',
-'la ballade ',
-'la valse '];
+['la symphonie',
+'la sarabande',
+'le concerto',
+'la chanson',
+'une ode',
+'le prélude',
+'la fugue',
+'la fantaisie',
+'le lied',
+'l opéra',
+'le concert',
+'la sonate',
+'le ballet',
+'la marche',
+'l ouverture',
+'la danse',
+'la ballade',
+'la valse ',
+'fait du',
+'le morceau'];
 
 var a_genres = [
 ['punk','font_punk','back_punk'],
@@ -134,5 +136,5 @@ function randomizator(){
     var rand_artists = parseInt(Math.random()*a_artists.length);
     var rand_prefixes = parseInt(Math.random()*a_prefixes.length);
     var rand_genres = parseInt(Math.random()*a_genres.length);
-    document.getElementById("results").innerHTML = "<p class='lead' style='text-transform: uppercase; font-family:"+ a_genres[rand_genres][1]+"'>"+a_artists[rand_artists] + " " +  a_prefixes[rand_prefixes] + " " +  a_genres[rand_genres][0];
+    document.getElementById("results").innerHTML = "<p class='lead' style='text-transform: uppercase; font-family:"+ a_genres[rand_genres][1]+"'>"+a_artists[rand_artists][0] + " " +  a_prefixes[rand_prefixes] + " " +  a_genres[rand_genres][0];
 }

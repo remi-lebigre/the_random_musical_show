@@ -146,7 +146,7 @@ function randomizator(){
 
 	document.head.appendChild(newStyle);
 
-    document.getElementById("results").innerHTML = "<p class='lead' style='text-transform: uppercase; font-family:"+ font+"'>"+a_artists[rand_artists][0] + " " +  a_prefixes[rand_prefixes] + " " +  a_genres[rand_genres][0];
+    document.getElementById("results").innerHTML = "<p class='lead' style='text-transform: uppercase; font-family:"+ a_genres[rand_genres][1]+"'>"+a_artists[rand_artists][0] + " " +  a_prefixes[rand_prefixes] + " " +  a_genres[rand_genres][0];
 }
 
 

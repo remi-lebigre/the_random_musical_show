@@ -139,9 +139,10 @@ function randomizator(){
     var newStyle = document.createElement('style');
 	var font = a_genres[rand_genres][1];
 	font += (font == "font_8bit") ? ".otf" : ".ttf";
+	console.log("font:",font);
 	newStyle.appendChild(document.createTextNode("@font-face {"+
-		    "font-family: '" + font + "';"+
-		    "src: url('src/font/" + font + ".ttf');"+
+		    "font-family: '" + a_genres[rand_genres][1] + "';"+
+		    "src: url('src/font/" + font + "');"+
 		"}"));
 
 	document.head.appendChild(newStyle);

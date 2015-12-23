@@ -136,5 +136,20 @@ function randomizator(){
     var rand_artists = parseInt(Math.random()*a_artists.length);
     var rand_prefixes = parseInt(Math.random()*a_prefixes.length);
     var rand_genres = parseInt(Math.random()*a_genres.length);
-    document.getElementById("results").innerHTML = "<p class='lead' style='text-transform: uppercase; font-family:"+ a_genres[rand_genres][1]+"'>"+a_artists[rand_artists][0] + " " +  a_prefixes[rand_prefixes] + " " +  a_genres[rand_genres][0];
+    var newStyle = document.createElement('style');
+	var font = a_genres[rand_genres][1];
+	font += (font == "font_8bit") ? ".otf" : ".ttf";
+	newStyle.appendChild(document.createTextNode("@font-face {"+
+		    "font-family: '" + font + "';"+
+		    "src: url('src/font/" + font + ".ttf');"+
+		"}"));
+
+	document.head.appendChild(newStyle);
+
+    document.getElementById("results").innerHTML = "<p class='lead' style='text-transform: uppercase; font-family:"+ font+"'>"+a_artists[rand_artists][0] + " " +  a_prefixes[rand_prefixes] + " " +  a_genres[rand_genres][0];
+}
+
+
+function start(){
+
 }

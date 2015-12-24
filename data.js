@@ -98,8 +98,7 @@ var a_genres = [
 ['J-pop','font_asiat','back_asiat',0],
 
 ['reggae','font_zouk','back_reggae',2],
-['reggae','font_zouk','back_zouk',2],
-['reggae','font_zouk','back_zouk',2],
+['zouk','font_zouk','back_zouk',2],
 
 ['Polka','font_polka','back_polka',0],
 ['Brassband','font_polka','back_polka',0],

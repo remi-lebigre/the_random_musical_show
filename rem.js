@@ -36,11 +36,19 @@ function start(){
 
 }
 
-
+/*
 function save_dat_shit(){
 	html2canvas(document.body).then(function(canvas) {
     document.body.appendChild(canvas);
+    
+    //var imgdata = canvas.toDataURL('image/png');
+    //var newdata = imgdata.replace(/^data:image\/png/,'data:application/octet-stream');
+    //document.body.innerHTML += "<a id='dl_image' download='random_musical_show.png' href='"+newdata+"'>Télécharger</a>";       
+       
     var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+    //document.body.innerHTML += "<a id='dl_image' download='random_musical_show.png' href='"+image+"'>Télécharger</a>";       
+
     window.location.href=image;
+   canvas.parentElement.removeChild(canvas);
 });
-}
+}*/

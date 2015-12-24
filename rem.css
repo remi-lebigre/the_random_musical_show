@@ -1,3 +1,7 @@
+body{
+	overflow:hidden;
+}
+
 #results_container{
 	position:absolute;top:0;left:0;width:100vw;height:100vh;;margin:0;padding:0;background:url(src/curtain.jpg) center center / cover no-repeat;
 }
@@ -11,26 +15,35 @@
 }
 
 #btn-submit,#btn-save{
-	z-index:20;position:absolute;bottom:10vh;left:50%;transform:translateX(-50%);-moz-transform:translateX(-50%);-webkit-transform:translateX(-50%);background: #eee;
+	z-index:20;position:absolute;top:5vh;left:10vw;transform:translateX(-50%);-moz-transform:translateX(-50%);-webkit-transform:translateX(-50%);background: #eee;
 }
 #btn-save{
-	bottom:0;
+	left:30vw;
 }
 
 p.lead{
-	z-index: 1;color:#fff;text-align:center;font-size:5em;position:relative;top:50%;
+	z-index: 1;color:#fff;text-align:center;font-size:4em;position:relative;top:50%;
     margin-left: 30vw;transform:translateY(-50%);-moz-transform:translateY(-50%);-webkit-transform:translateY(-50%);
 }
 
+a{
+	    position: absolute;
+    z-index: 20;
+    padding: 7px;
+    background: #eee;
+    top: 5vh;
+    text-transform: uppercase;
+    left: 43vw;
+}
 
 @media screen and (min-width:960px){
 	p.lead{
-		font-size:6em;
+		font-size:5em;
 	}
 }
 
 @media screen and (min-width:1300px){
 	p.lead{
-		font-size:7em;
+		font-size:6em;
 	}
 }

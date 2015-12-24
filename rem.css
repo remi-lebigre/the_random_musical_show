@@ -11,7 +11,7 @@
 }
 
 #btn-submit,#btn-save{
-	position:absolute;bottom:10vh;left:50%;transform:translateX(-50%);-moz-transform:translateX(-50%);-webkit-transform:translateX(-50%);background: #eee;
+	z-index:20;position:absolute;bottom:10vh;left:50%;transform:translateX(-50%);-moz-transform:translateX(-50%);-webkit-transform:translateX(-50%);background: #eee;
 }
 #btn-save{
 	bottom:0;
@@ -20,4 +20,17 @@
 p.lead{
 	z-index: 1;color:#fff;text-align:center;font-size:5em;position:relative;top:50%;
     margin-left: 30vw;transform:translateY(-50%);-moz-transform:translateY(-50%);-webkit-transform:translateY(-50%);
+}
+
+
+@media screen and (min-width:960px){
+	p.lead{
+		font-size:6em;
+	}
+}
+
+@media screen and (min-width:1300px){
+	p.lead{
+		font-size:7em;
+	}
 }

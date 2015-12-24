@@ -16,7 +16,16 @@ function randomizator(){
 
 	document.head.appendChild(newStyle);
 
-    document.getElementById("results").innerHTML = "<p class='lead' style='font-family:"+ a_genres[rand_genres][1]+"'>"+a_artists[rand_artists][0] + "<br>" +  a_prefixes[rand_prefixes] + "<br>" +  a_genres[rand_genres][0];
+	var text_transform = a_genres[rand_genres][3];
+	if(text_transform==1){
+		text_transform = "text-transform:uppercase;";
+	}else if(text_transform==2){
+		text_transform = "text-transform:lowercase;";
+	}else{
+		text_transform ="";
+	}
+	
+    document.getElementById("results").innerHTML = "<p class='lead' style='"+text_transform+"font-family:"+ a_genres[rand_genres][1]+"'>"+a_artists[rand_artists][0] + "<br>" +  a_prefixes[rand_prefixes] + "<br>" +  a_genres[rand_genres][0];
 	document.getElementById("results_container").style.background ="url(src/back/"+a_genres[rand_genres][2]+".jpg) center center / cover no-repeat";	
 	document.getElementById("img_artist").src ="src/compositeurs/"+a_artists[rand_artists][1]+".png";
 }

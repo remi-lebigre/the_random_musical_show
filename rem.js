@@ -18,11 +18,20 @@ function randomizator(){
 
     document.getElementById("results").innerHTML = "<p class='lead' style='font-family:"+ a_genres[rand_genres][1]+"'>"+a_artists[rand_artists][0] + "<br>" +  a_prefixes[rand_prefixes] + "<br>" +  a_genres[rand_genres][0];
 	document.getElementById("results_container").style.background ="url(src/back/"+a_genres[rand_genres][2]+".jpg) center center / cover no-repeat";	
-	document.getElementById("img_artist").src ="src/compositeurs/"+a_artists[rand_artists][1]+".jpg";
+	document.getElementById("img_artist").src ="src/compositeurs/"+a_artists[rand_artists][1]+".png";
 }
 
 
 
 function start(){
 
+}
+
+
+function save_dat_shit(){
+	html2canvas(document.body).then(function(canvas) {
+    document.body.appendChild(canvas);
+    var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+    window.location.href=image;
+});
 }

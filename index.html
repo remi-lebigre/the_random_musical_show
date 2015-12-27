@@ -2,22 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Random Musical Show</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="fittext.js"></script>
+    <script src="fastclick.js"></script>
     <script src="data.js"></script>
+    <script src="get.js"></script>
+    <script src="clipboard.js"></script>
     <script src="rem.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="À la manière de Mozart l'Opéra Rock, génère ton propre titre de comédie musicale">
+    
+	<meta property="og:title" content="The Random Musical Show" />
+	<meta property="og:description" content="À la manière de Mozart l'Opéra Rock, génère ton propre titre de comédie musicale" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://lebig.re/sites/randommusicalshow/" />
+	<meta property="og:image" content="http://lebig.re/sites/randommusicalshow/src/meta_fb.jpg" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="rem.css">
     <style>
 
     </style>
 </head>
-<body onload="start()">
+<body>
     <div id="results_container" >
-        <div id="results" ></div>
+        <div id="results" ><p class='lead'>Génère ton nom de comédie musicale</p></div>
         <img src="" id="img_artist"/>
     </div>
     <button id="btn-submit" class="btn btn-alert" onclick="randomizator();">LANCER LA MACHINE</button>
     <!--<button id="btn-save" class="btn btn-default" onclick="save_dat_shit();">Sauvegarder mon oeuvre</button>-->
     <!--<script src="html2canvas.js"></script>-->
+    
+	<div id="share_wrapper">
+			
+	    <button id="share" class="btn btn-primary" onclick="share();">Partage !</button>
+	
+	</div>
 </body>
 </html>
